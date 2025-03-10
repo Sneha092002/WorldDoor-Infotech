@@ -1,17 +1,16 @@
 {
-  "name": "demo_wd",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.10",
+    "tailwindcss": "^4.0.10"
+  },
+  "name": "world-door",
   "version": "1.0.0",
   "main": "index.js",
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "tailwindcss": "^4.0.10"
-  },
-  "dependencies": {
-    "@tailwindcss/cli": "^4.0.10"
-  }
+  "description": ""
 }
