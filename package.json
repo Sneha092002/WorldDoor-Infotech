@@ -1,17 +1,6 @@
 {
-  "name": "demo_wd",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "tailwindcss": "^4.0.10"
-  },
   "dependencies": {
-    "@tailwindcss/cli": "^4.0.10"
+    "@tailwindcss/cli": "^4.0.10",
+    "tailwindcss": "^4.0.10"
   }
 }
