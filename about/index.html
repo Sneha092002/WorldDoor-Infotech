@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+  </style>
+</head>
+<body class="bg-[#F7F7F7] text-white font-[Raleway]">
+
+  <!-- Header -->
+  <header class="bg-white h-[100px] flex items-center shadow-md px-6 sticky top-0 left-0 w-full z-50">
+    <div class="container mx-auto flex justify-between items-center w-full max-w-[1400px]">
+      
+     <!-- Logo -->
+     <div class="flex items-center space-x-0">
+        <img src="./src/img/logo.png" alt="World Door Infotech" class="h-[73px] w-[73px]">
+        <span class="text-2xl font-bold text-[#0E1F51]">World Door Infotech</span>
+      </div>
+      
+      
+
+      <!-- Mobile Menu Toggle -->
+      <div class="md:hidden">
+        <input type="checkbox" id="menu-toggle" class="hidden peer">
+        <label for="menu-toggle" class="block cursor-pointer">
+          <svg class="w-6 h-6 text-[#0E1F51]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </label>
+  
+        <!-- Mobile Navigation -->
+        <nav class="hidden peer-checked:block absolute right-4 top-20 bg-[#F7F7F7]  w-48 rounded-lg shadow-lg p-4">
+          <div class="relative">
+            <a href="#" class="block py-2 text-[#F05440] font-semibold mb-2 text-[16px] leading-[20px]">
+                About
+              </a>
+              <span class="absolute bottom-[-6px] w-[66px] h-[4px] bg-[#F05440]"></span>    
+          </div>
+          <a href="#" class="block py-2  text-[#0E1F51] hover:text-[#F05440] font-semibold text-[16px] leading-[20px]">
+            Our Services
+          </a>
+          <a href="#" class="block py-2  text-[#0E1F51] hover:text-[#F05440] font-semibold text-[16px] leading-[20px]">
+            Portfolio
+          </a>
+          <a href="#" class="block py-2 text-[#0E1F51] hover:text-[#F05440] font-semibold text-[16px] leading-[20px]">
+            Blog
+          </a>
+          <a href="#" class="block py-2 text-[#0E1F51] hover:text-[#F05440] font-semibold text-[16px] leading-[20px]">
+            Contact
+          </a>
+          <button class="mt-2 w-full bg-[#F05440] text-white hover:bg-gray-200 px-4 py-2 rounded-lg font-semibold text-[16px] leading-[20px]">
+            Get in Touch
+          </button>
+        </nav>
+      </div>
+  
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center space-x-6">
+        <div class="relative">
+          <a href="#" class="text-[#F05440] font-semibold text-[16px] leading-[20px]">
+            About
+          </a>
+          <span class="absolute left-1/2 transform -translate-x-1/2 bottom-0 w-[66px] h-[4px] bg-[#F05440]"></span>
+        </div>
+        <a href="#" class="text-[#0E1F51] hover:text-[#F05440] font-semibold text-[16px] leading-[20px]">
+          Our Services
+        </a>
+        <a href="#" class="text-[#0E1F51] hover:text-[#F05440] font-semibold text-[16px] leading-[20px]">
+          Portfolio
+        </a>
+        <a href="#" class="text-[#0E1F51] hover:text-[#F05440] font-semibold text-[16px] leading-[20px]">
+          Blog
+        </a>
+        <a href="#" class="text-[#0E1F51] hover:text-[#F05440] font-semibold text-[16px] leading-[20px]">
+          Contact
+        </a>
+        <button class="bg-[#F05440] hover:opacity-80 text-white px-4 py-2 rounded-lg font-semibold text-[16px] leading-[20px]">
+          Get in Touch
+        </button>
+      </nav>
+    </div>
+  </header>
+  
+
+  <!-- Main Sections -->
+  <main class="p-0 container mx-auto">
+    <section id="section1" class="bg-[#0E1F51] w-full h-[288px] flex flex-col justify-center items-center text-white text-center">
+        <!-- Main Title -->
+        <h2 class="text-[48px] leading-[58px] font-bold text-[#F05440] font-raleway">
+            About
+        </h2>
+        
+        <!-- Breadcrumb Text -->
+        <p class="text-[24px] leading-[20px] font-medium text-white font-raleway mt-2">
+            Home / About
+        </p>
+    </section>
+    
+      
+
+    <section id="section2" class="bg-[#F7F7F7] w-full min-h-[598px] py-[100px]">
+        <div class="max-w-[1700px] mx-auto flex flex-col lg:flex-row items-center gap-8 px-6 lg:px-[150px]">
+            <!-- Left Side: Image -->
+            <div class="w-full md:w-1/2 flex justify-center md:justify-start">
+                <div class="w-[90%] max-w-[555px] h-[398px] ">
+                    <img src="./src/img/Mask group.png" 
+                         alt="About Us Image"
+                         class="w-full h-full object-cover ">
+                </div>
+            </div>
+    
+            <!-- Right Side: Text -->
+            <div class="w-full md:w-1/2 px-4 md:px-0">
+                <h3 class="text-[#F05440] font-raleway font-bold text-[24px] leading-[20px] tracking-[0%] uppercase mb-2 text-center md:text-left">
+                    \ About us \
+                </h3>                
+                <h2 class="text-[#0E1F51] font-raleway font-bold text-[40px] leading-[50px] tracking-[0%] mb-4 text-center md:text-left">
+                    One of the Fastest Way to Business Growth
+                </h2>
+    
+                <p class="text-[#000000] font-raleway font-medium text-[16px] leading-[27px] tracking-[0%] mb-4 text-center md:text-left">
+                    It is a long established fact that a reader will be distracted by the readable content of a page 
+                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal 
+                    distribution of letters, as opposed.
+                </p>
+    
+                <div class="bg-white flex flex-nowrap flex-row md:flex-row h-auto md:h-[100px] items-center justify-left p-4 rounded-2xl w-full">
+                    <!-- Vector Image -->
+                    <div class="w-[70px] h-[70px] bg-[#F7F7F7] flex items-center justify-center rounded-lg mr-0 md:mr-4 mb-3 md:mb-0">
+                        <img src="./src/img/Black.png" alt="Vector Icon" class="w-[40px] h-[40px]">
+                    </div>
+    
+                    <!-- Text Content -->
+                    <div class="text-center md:text-left flex flex-col">
+                        <p class="text-[#0E1F51] font-raleway font-bold text-[20px] leading-[20px] tracking-[0]">
+                            Get Instant Professional Advice
+                        </p>
+    
+                        <div class="flex flex-col md:flex-row justify-center md:justify-start mt-2">
+                            <p class="text-[#000000] font-raleway font-medium text-[16px] leading-[16px] tracking-[0]">
+                                Ready to Help:
+                            </p>
+                            <p class="text-[#F05440] font-raleway font-bold text-[16px] leading-[16px] tracking-[0] md:ml-2">
+                                +1 356 678 7897
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+
+    <section id="section3" class="bg-[#FFFFFF] py-[100px] px-6 md:px-[100px] lg:px-[150px] flex flex-col items-center text-center">
+        <p class="text-[#F05440] font-raleway font-bold text-[24px] leading-[20px] tracking-[0]">
+            \Team\
+        </p>
+        <h3 class="text-[#0E1F51] font-raleway font-bold text-[40px] leading-[40px] tracking-[0] mt-2">
+            Our Leaders
+        </h3>
+    
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+            <!-- Cards -->
+            <div class="w-full max-w-[263px] bg-white flex flex-col items-center rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:ring-2 hover:ring-[#F05440]">
+                <img src="src/img/card.png" alt="Person Image" class="w-full h-[300px] object-cover rounded-t-lg">
+                <p class="text-[#F05440] font-raleway font-bold text-[20px] leading-[20px] text-center mt-3">
+                    Larry F. Burnett
+                </p>
+                <p class="text-[#0E1F51] font-raleway font-medium text-[16px] leading-[20px] mt-3 text-center">
+                    CEO
+                </p>
+            </div>
+            
+            <!-- Duplicate the above card structure 7 more times -->
+            <div class="w-full max-w-[263px] bg-white flex flex-col items-center rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:ring-2 hover:ring-[#F05440]">
+                <img src="src/img/card.png" alt="Person Image" class="w-full h-[300px] object-cover rounded-t-lg">
+                <p class="text-[#F05440] font-raleway font-bold text-[20px] leading-[20px] text-center mt-3">
+                    Larry F. Burnett
+                </p>
+                <p class="text-[#0E1F51] font-raleway font-medium text-[16px] leading-[20px] mt-3 text-center">
+                    CEO
+                </p>
+            </div>
+            
+            <div class="w-full max-w-[263px] bg-white flex flex-col items-center rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:ring-2 hover:ring-[#F05440]">
+                <img src="src/img/card.png" alt="Person Image" class="w-full h-[300px] object-cover rounded-t-lg">
+                <p class="text-[#F05440] font-raleway font-bold text-[20px] leading-[20px] text-center mt-3">
+                    Larry F. Burnett
+                </p>
+                <p class="text-[#0E1F51] font-raleway font-medium text-[16px] leading-[20px] mt-3 text-center">
+                    CEO
+                </p>
+            </div>
+            
+            <!-- Duplicate the above card structure 7 more times -->
+            <div class="w-full max-w-[263px] bg-white flex flex-col items-center rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:ring-2 hover:ring-[#F05440]">
+                <img src="src/img/card.png" alt="Person Image" class="w-full h-[300px] object-cover rounded-t-lg">
+                <p class="text-[#F05440] font-raleway font-bold text-[20px] leading-[20px] text-center mt-3">
+                    Larry F. Burnett
+                </p>
+                <p class="text-[#0E1F51] font-raleway font-medium text-[16px] leading-[20px] mt-3 text-center">
+                    CEO
+                </p>
+            </div>
+            <div class="w-full max-w-[263px] bg-white flex flex-col items-center rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:ring-2 hover:ring-[#F05440]">
+                <img src="src/img/card.png" alt="Person Image" class="w-full h-[300px] object-cover rounded-t-lg">
+                <p class="text-[#F05440] font-raleway font-bold text-[20px] leading-[20px] text-center mt-3">
+                    Larry F. Burnett
+                </p>
+                <p class="text-[#0E1F51] font-raleway font-medium text-[16px] leading-[20px] mt-3 text-center">
+                    CEO
+                </p>
+            </div>
+            
+            <!-- Duplicate the above card structure 7 more times -->
+            <div class="w-full max-w-[263px] bg-white flex flex-col items-center rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:ring-2 hover:ring-[#F05440]">
+                <img src="src/img/card.png" alt="Person Image" class="w-full h-[300px] object-cover rounded-t-lg">
+                <p class="text-[#F05440] font-raleway font-bold text-[20px] leading-[20px] text-center mt-3">
+                    Larry F. Burnett
+                </p>
+                <p class="text-[#0E1F51] font-raleway font-medium text-[16px] leading-[20px] mt-3 text-center">
+                    CEO
+                </p>
+            </div>
+            <div class="w-full max-w-[263px] bg-white flex flex-col items-center rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:ring-2 hover:ring-[#F05440]">
+                <img src="src/img/card.png" alt="Person Image" class="w-full h-[300px] object-cover rounded-t-lg">
+                <p class="text-[#F05440] font-raleway font-bold text-[20px] leading-[20px] text-center mt-3">
+                    Larry F. Burnett
+                </p>
+                <p class="text-[#0E1F51] font-raleway font-medium text-[16px] leading-[20px] mt-3 text-center">
+                    CEO
+                </p>
+            </div>
+            
+            <!-- Duplicate the above card structure 7 more times -->
+            <div class="w-full max-w-[263px] bg-white flex flex-col items-center rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:ring-2 hover:ring-[#F05440]">
+                <img src="src/img/card.png" alt="Person Image" class="w-full h-[300px] object-cover rounded-t-lg">
+                <p class="text-[#F05440] font-raleway font-bold text-[20px] leading-[20px] text-center mt-3">
+                    Larry F. Burnett
+                </p>
+                <p class="text-[#0E1F51] font-raleway font-medium text-[16px] leading-[20px] mt-3 text-center">
+                    CEO
+                </p>
+            </div>
+
+        </div>
+    </section>
+    
+    
+
+    <section id="section3" class="bg-[#FFFFFF] rounded-lg flex flex-col items-center text-center">
+      <div class="w-full max-w-[945px] h-[294px] bg-cover bg-center rounded-lg flex flex-col items-center mb-[100px] justify-center px-6 py-12" style="background-image: url('./src/img/section4.png');">
+        <p class="text-[32px] leading-[50px] font-raleway font-bold text-[#F7F7F7] text-center tracking-[0%] max-w-[600px]">
+          “Some of the History of Our Company is that we are Catching up through Video”
+      </p>      
+  
+          <button class="mt-6 px-6 py-3 bg-[#F05440] text-white font-raleway font-bold text-[16px] rounded-lg hover:bg-[#d84335] transition duration-300">
+              Get In Touch
+          </button>
+      </div>
+  </section>
+  </main>
+  
+  
+
+  <!-- Footer -->
+  <footer class="bg-[#0E1F51] text-white py-[100px] px-6 md:px-[150px]">
+    <div class="flex flex-wrap lg:flex-nowrap w-full gap-6  justify-between">
+      <div class="lg:w-[24%] gap-4 w-full flex flex-col items-start min-h-[200px]">
+        <h2 class="font-raleway font-bold text-[24px] leading-[20px]">About Us</h2>
+        <div class="w-[50px] mb-6 h-[5px] bg-[#F05440] rounded-[5px] mt-2"></div>
+        <p class="text-white font-raleway font-medium text-[16px] leading-[30px]">
+          It is a long established fact that a reader will be distracted by the readable content of a page when looking at
+        </p>
+        <div class="flex gap-4 mt-auto">
+          <a href="#" class="w-[50px] h-[50px] bg-white rounded-lg flex items-center justify-center">
+            <img src="./src/img/linkedin.png" alt="LinkedIn" >
+          </a>
+          <a href="#" class="w-[50px] h-[50px] bg-white rounded-lg flex items-center justify-center">
+            <img src="./src/img/insta.png" alt="Instagram">
+          </a>
+          <a href="#" class="w-[50px] h-[50px] bg-white rounded-lg flex items-center justify-center">
+            <img src="./src/img/fb.png" alt="Facebook">
+          </a>
+          <a href="#" class="w-[50px] h-[50px] bg-white rounded-lg flex items-center justify-center">
+            <img src="./src/img/tweeter.png" alt="Twitter" >
+          </a>
+        </div>
+      </div>
+      
+      
+  
+      <div class="lg:w-[24%] gap-4 w-full flex flex-col items-start min-h-[200px]">
+        <p class="font-raleway font-bold text-[24px] leading-[20px]">Services</p>
+        <div class="w-[50px] mb-6 h-[5px] bg-[#F05440] rounded-[5px] mt-2"></div>
+        <p class="text-white font-raleway font-medium text-[16px] leading-[24px]">Web Design/Development</p>
+        <p class="text-white font-raleway font-medium text-[16px] leading-[24px]">App Development</p>
+        <p class="text-white font-raleway font-medium text-[16px] leading-[24px]">UI/UX Design</p>
+        <p class="text-white font-raleway font-medium text-[16px] leading-[24px]">HubSpot Integration</p>
+        <p class="text-white font-raleway font-medium text-[16px] leading-[24px]">Email Marketing</p>
+        <p class="text-white font-raleway font-medium text-[16px] leading-[24px]">Website Migration</p>
+      </div>
+      
+  
+      <div class="lg:w-[24%] gap-4 w-full flex flex-col gap-4 items-start min-h-[200px]">
+        <p class="font-raleway font-bold text-[24px] leading-[20px]">Career</p>
+        <div class="w-[50px] mb-6 h-[5px] bg-[#F05440] rounded-[5px] mt-2"></div>
+        
+        <div class="flex items-center  rounded-lg p-4 w-full">
+          <div class="w-[68px] h-[68px] bg-white rounded-lg flex items-center justify-center">
+            <img src="./src/img/react.png" alt="Logo 1">
+          </div>
+          <div class="ml-4">
+            <p class="text-[#F05440] font-raleway font-bold text-[20px] leading-[25px]">ReactJs Dev</p>
+            <p class="text-white font-raleway font-medium text-[16px] leading-[25px]">1-5 Years of Exp.</p>
+          </div>
+          
+        </div>
+      
+        <div class="flex items-center  rounded-lg p-4 w-full">
+          <div class="w-[68px] h-[68px] bg-white rounded-lg flex items-center justify-center">
+            <img src="./src/img/wordpress.png" alt="Logo 2">
+          </div>
+          <div class="ml-4">
+            <p class="text-[#F05440] font-raleway font-bold text-[20px] leading-[25px]">Wordpress Dev.</p>
+            <p class="text-white font-raleway font-medium text-[16px] leading-[25px]">1-5 Years of Exp.</p>
+          </div>
+        </div>
+      
+        <div class="flex items-center  rounded-lg p-4 w-full">
+          <div class="w-[68px] h-[68px] bg-white rounded-lg flex items-center justify-center">
+            <img src="./src/img/wix.png" alt="Logo 3">
+          </div>
+          <div class="ml-4">
+            <p class="text-[#F05440] font-raleway font-bold text-[20px] leading-[25px]">Python Developer</p>
+            <p class="text-white font-raleway font-medium text-[16px] leading-[25px]">1-5 Years of Exp.</p>
+          </div>
+        </div>
+      
+      </div>
+      
+  
+      <div class="lg:w-[24%] gap-4 w-full flex flex-col items-start min-h-[200px]">
+        <p class="font-raleway font-bold text-[24px] leading-[20px]">Subscribe Us</p>
+        <div class="w-[50px] mb-6 h-[5px] bg-[#F05440] rounded-[5px] mt-2"></div>
+        <p class="text-white font-raleway text-[20px] leading-[30px]">
+          It is a long established fact that a reader will be distracted by the readable
+        </p>
+        
+        <form action="/" method="post" class="flex w-full gap-4 mt-4 flex-col">
+          <input type="email" name="" id="" placeholder="Email" class="p-3 w-full rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#F05440]">
+          <input type="submit" value="Submit" class="mt-4 px-6 py-3 bg-[#F05440] text-white font-raleway font-bold text-[16px] rounded-lg hover:bg-[#d84335] transition duration-300 self-end">
+        </form>
+        
+      </div>
+    </div>
+  </footer>
+  
+</body>
+</html>
