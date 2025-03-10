@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - World Door Infotech</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script> <!-- Tailwind CSS CDN -->
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .btn-submit, .btn-back {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: inline-block;
+            text-align: center;
+            font-weight: bold;
+        }
+        .btn-submit {
+            background-color: red;
+            color: white;
+        }
+        .btn-submit:hover {
+            background-color: darkred;
+        }
+        .btn-back {
+            background-color: #ccc;
+            color: black;
+            margin-top: 10px;
+        }
+        .btn-back:hover {
+            background-color: gray;
+        }
+        .contact-info {
+            margin-top: 20px;
+        }
+        .social-icons img {
+            width: 30px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- ✅ HEADER -->
+    <header class="w-full h-[100px] bg-white text-black flex items-center justify-between px-10 shadow-md fixed top-0 left-0 right-0">
+        <div class="flex items-center space-x-4">
+            <img src="images/logo.jpg" alt="Logo" class="w-16 h-auto"> 
+            <h1 class="text-xl font-bold">World Door Infotech</h1>
+        </div>
+        <nav>
+            <ul class="flex space-x-5">
+                <li><a href="index.html" class="hover:text-red-500">Home</a></li>
+                <li><a href="about.html" class="hover:text-red-500">About</a></li>
+                <li><a href="services.html" class="hover:text-red-500">Services</a></li>
+                <li><a href="portfolio.html" class="hover:text-red-500">Portfolio</a></li>
+                <li><a href="contact.html" class="text-orange-500 font-bold">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ✅ CONTACT FORM SECTION -->
+    <section class="container bg-white mt-20 p-6 rounded-lg shadow-md">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">Get in Touch</h2>
+        <p class="text-gray-600">We'd love to hear from you! Fill out the form below and we'll get back to you as soon as possible.</p>
+
+        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <input type="text" class="form-input" placeholder="Your Name" required>
+            <input type="email" class="form-input" placeholder="Your Email" required>
+            <textarea class="form-input" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+
+        <!-- ✅ BACK BUTTON -->
+        <button class="btn-back" onclick="history.back()">⬅ Back</button>
+    </section>
+
+    <!-- ✅ CONTACT DETAILS -->
+    <section class="container contact-info bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-bold text-gray-800 mb-3">Contact Information</h3>
+        <p class="text-gray-600"><strong>📍 Address:</strong> worlddoor  infotech, pune, India</p>
+        <p class="text-gray-600"><strong>📞 Phone:</strong> +91 </p>
+        <p class="text-gray-600"><strong>📧 Email:</strong> contact@worlddoorinfotech.com</p>
+    </section>
+
+    <!-- ✅ GOOGLE MAP -->
+    <section class="container mt-6 bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-bold text-gray-800 mb-3">Find Us</h3>
+        <iframe 
+            width="100%" 
+            height="300" 
+            frameborder="0" 
+            style="border:0; border-radius: 10px;" 
+            allowfullscreen 
+            src="https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=Mumbai,India">
+        </iframe>
+    </section>
+
+    <!-- ✅ SOCIAL MEDIA -->
+    <section class="container mt-6 bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-bold text-gray-800 mb-3">Follow Us</h3>
+        <div class="flex space-x-3 social-icons">
+            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/insta.png" alt="Instagram"></a>
+            <a href="#"><img src="images/linkdin.png" alt="LinkedIn"></a>
+            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+        </div>
+    </section>
+
+    <!-- ✅ FOOTER -->
+    <footer class="w-full bg-[#0C1B39] text-white p-6 text-center mt-10">
+        <p>&copy; 2025 World Door Infotech. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
