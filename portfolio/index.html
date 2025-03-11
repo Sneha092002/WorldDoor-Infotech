@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Business Growth Landing Page</title>
+    <link rel="stylesheet" href="input.css" />
+    <link href="./output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./HomeScreen/script.js"></script>
+    <style>
+      /* Header Styling */
+      header {
+        font-family: "Poppins", sans-serif; /* Professional modern font */
+        font-weight: 700; /* Bold font */
+        letter-spacing: 0.5px; /* Slight letter spacing for better readability */
+        text-transform: uppercase; /* Makes it more professional */
+      }
+
+      /*  Custom Styles */
+      /* Custom Styles */
+      .header-logo {
+        width: 80px;
+        height: auto;
+      }
+
+      /* Ensure header doesn't overlap content */
+      body {
+        padding-top: 100px;
+      }
+
+      /* Fix hero section spacing */
+      section {
+        margin-top: 0;
+      }
+
+      /* Hover Effects */
+      button:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      img:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      /* Responsive Fixes */
+      @media (max-width: 768px) {
+        .flex.items-center.space-x-5 {
+          flex-direction: column;
+          text-align: center;
+        }
+        .header-logo {
+          width: 60px;
+        }
+        .text-5xl {
+          font-size: 2rem;
+        }
+      }
+
+      .cursor-pointer {
+        cursor: pointer;
+      }
+      .slider {
+        display: flex;
+        width: 300%; /* Each slide takes full width */
+        transition: transform 0.5s ease-in-out;
+      }
+      .testimonial-container {
+        scroll-snap-type: x mandatory;
+        overflow-x: hidden; /* Hide overflow */
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
+      .testimonial-card {
+        flex: 0 0 100%;
+        scroll-snap-align: center;
+      }
+      .dot {
+        width: 10px;
+        height: 10px;
+        background-color: gray;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+      .dot.active {
+        background-color: red;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #0e1a3a;
+        color: white;
+        font-family: Arial, sans-serif;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+      .footer-column img {
+        width: 120px; /* Adjusted size */
+        height: auto;
+        display: block;
+        margin-bottom: 15px;
+      }
+
+      body {
+        background-color: #0e1a3a;
+        color: white;
+      }
+
+      .footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px;
+        background-color: #0e1a3a;
+      }
+
+      .footer-column {
+        flex: 1;
+        padding: 0 20px;
+      }
+
+      .footer-column h3 {
+        margin-bottom: 10px;
+        font-size: 20px;
+      }
+
+      .footer-column h3::after {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 3px;
+        background: #ff5e3a;
+        margin-top: 5px;
+      }
+
+      .footer-column p,
+      .footer-column ul {
+        font-size: 14px;
+        color: #ddd;
+      }
+
+      .footer-column ul {
+        list-style: none;
+      }
+
+      .footer-column ul li {
+        margin: 8px 0;
+      }
+
+      .career-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+      }
+
+      .career-item img {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+      }
+
+      .subscribe input {
+        width: 80%;
+        padding: 10px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 5px;
+      }
+
+      .subscribe button {
+        margin-top: 10px;
+        padding: 10px 20px;
+        border: none;
+        background: #ff5e3a;
+        color: white;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      .social-icons {
+        display: flex;
+        margin-top: 20px;
+      }
+
+      .social-icons img {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+        background: white;
+        padding: 5px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Header -->
+    <header
+      class="w-full h-[100px] bg-white text-black flex items-center justify-between px-10 fixed top-0 left-0 shadow-md z-50"
+    >
+      <div class="flex items-center space-x-4">
+        <a href="../index.html">
+          <img src="../images/logo2.png" alt="Logo" class="header-logo" />
+        </a>
+        <h1 class="text-xl font-bold">
+          <a href="../index.html"> World Door Infotech </a>
+        </h1>
+      </div>
+
+      <!-- Hamburger Menu for Mobile -->
+      <div class="md:hidden">
+        <button id="menu-toggle" class="text-black focus:outline-none">
+          <svg
+            class="w-8 h-8"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="hidden md:flex items-center space-x-5" id="menu">
+        <ul class="flex space-x-5">
+          <li>
+            <a href="../about/index.html" class="hover:text-red-500">About</a>
+          </li>
+          <li>
+            <a href="../services/index.html" class="hover:text-red-500"
+              >Our Services</a
+            >
+          </li>
+          <li>
+            <a href="../portfolio/index.html" class="hover:text-red-500"
+              >Portfolio</a
+            >
+          </li>
+          <li><a href="#" class="hover:text-red-500">Blog</a></li>
+          <li>
+            <a href="../contact/index.html" class="hover:text-red-500"
+              >Contact</a
+            >
+          </li>
+        </ul>
+
+        <a href="contact.html">
+          <button
+            class="bg-red-500 text-white px-5 py-2 rounded-lg hover:bg-red-700 transition-all"
+          >
+            Get in Touch
+          </button>
+        </a>
+      </nav>
+      <!-- Mobile Menu -->
+      <nav
+        class="absolute top-[100px] left-0 w-full bg-white text-black hidden flex-col items-center space-y-4 py-4 md:hidden"
+        id="mobile-menu"
+      >
+        <button class="nav-btn" onclick="navigate('./services/index')">
+          About
+        </button>
+        <button class="nav-btn" onclick="navigate('./services/index')">
+          Our Services
+        </button>
+        <button class="nav-btn" onclick="navigate('./services/index')">
+          Portfolio
+        </button>
+        <button class="nav-btn" onclick="navigate('./services/index')">
+          Contact
+        </button>
+        <a href="contact.html">
+          <button
+            class="bg-red-500 text-white px-5 py-2 rounded-lg hover:bg-red-700 transition-all"
+          >
+            Get in Touch
+          </button>
+        </a>
+      </nav>
+    </header>
+    <!-- End HeaderF -->
+
+    <!-- Portfolio Section -->
+    <!--  PORTFOLIO SECTION  -->
+    <section
+      class="w-full h-[230px] bg-blue-950 flex flex-col items-center justify-center text-white mt-0"
+    >
+      <h2 class="text-3xl font-bold text-orange-500">Portfolio</h2>
+      <p class="text-white">Home / Portfolio</p>
+    </section>
+
+    <!--  CATEGORY BUTTONS -->
+    <section class="text-center py-10">
+      <p class="text-orange-500 text-2xl font-semibold">/Portfolio/</p>
+      <h3 class="text-3xl font-bold text-gray-800">Our Work</h3>
+      <div class="flex justify-center space-x-4 mt-4">
+        <!--<button class="category-button active-button">ALL</button>-->
+        <a href="all.html" class="category-button">ALL</a>
+        <a href="life.html" class="category-button">LIFE</a>
+        <a href="moments.html" class="category-button">MOMENTS</a>
+        <a href="nature.html" class="category-button">NATURE</a>
+        <a href="stories.html" class="category-button">STORIES</a>
+        <a href="travel.html" class="category-button">TRAVEL</a>
+      </div>
+    </section>
+
+    <!--  IMAGES SECTION (Clickable Images, Moved Upwards) -->
+    <section class="w-[1440px] h-[1200px] mx-auto relative bg-gray-100 p-10">
+      <a href="blog.html"
+        ><img
+          src="images/Rectangle.png"
+          class="absolute top-[200px] left-[135px] w-[770px] h-[416px] object-cover rounded-lg"
+      /></a>
+      <a href="blog.html"
+        ><img
+          src="images/Rectangle (1).png"
+          class="absolute top-[200px] left-[935px] w-[370px] h-[416px] object-cover rounded-lg"
+      /></a>
+      <a href="blog.html"
+        ><img
+          src="images/Rectangle (2).png"
+          class="absolute top-[646px] left-[135px] w-[270px] h-[416px] object-cover rounded-lg"
+      /></a>
+      <a href="blog.html"
+        ><img
+          src="images/Rectangle (3).png"
+          class="absolute top-[646px] left-[435px] w-[370px] h-[416px] object-cover rounded-lg"
+      /></a>
+      <a href="blog.html"
+        ><img
+          src="images/Rectangle (4).png"
+          class="absolute top-[646px] left-[835px] w-[470px] h-[416px] object-cover rounded-lg"
+      /></a>
+    </section>
+
+    <!--  QUOTE SECTION (Button Positioned Exactly on Text) -->
+    <section class="w-full flex justify-center my-10 relative">
+      <img
+        src="images/Quote.png"
+        alt="Quote Section"
+        class="quote-section rounded-lg object-cover"
+      />
+
+      <!--  Get in Touch Button Positioned Exactly on the Image -->
+      <a
+        href="contact.html"
+        class="absolute top-[72%] left-[50%] transform -translate-x-1/2 -translate-y-1/2"
+      >
+        <button
+          class="bg-red-500 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-all"
+        >
+          Get in Touch
+        </button>
+      </a>
+    </section>
+    <!--End Portfolio Section-->
+
+    <!-- Footer -->
+    <footer style="margin-top: 3em" class="footer">
+      <div class="footer-column">
+        <img src="../images/logo.png" alt="Company Logo" class="company-logo" />
+        <p>
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at
+        </p>
+        <div class="social-icons">
+          <img
+            src="../images/linkedin.png"
+            alt="LinkedIn"
+            class="hover-effect"
+          />
+          <img src="../images/insta.png" alt="Instagram" class="hover-effect" />
+          <img src="../images/fb.png" alt="Facebook" class="hover-effect" />
+          <img src="../images/witter.png" alt="Twitter" class="hover-effect" />
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h3>Services</h3>
+        <ul>
+          <li class="hover-effect">Web Design/Development</li>
+          <li class="hover-effect">App Development</li>
+          <li class="hover-effect">UI/UX Design</li>
+          <li class="hover-effect">HubSpot Integration</li>
+          <li class="hover-effect">Email Marketing</li>
+          <li class="hover-effect">Website Migration</li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Career</h3>
+        <div class="career-item hover-effect">
+          <img src="images/react.png" alt="ReactJS Dev" />
+          <div>
+            <strong>ReactJS Dev.</strong><br />
+            1-5 Years of Exp.
+          </div>
+        </div>
+        <div class="career-item hover-effect">
+          <img src="images/world.png" alt="WordPress Dev" />
+          <div>
+            <strong>WordPress Dev.</strong><br />
+            1-5 Years of Exp.
+          </div>
+        </div>
+        <div class="career-item hover-effect">
+          <img src="images/wix.png" alt="Python Dev" />
+          <div>
+            <strong>Python Developer</strong><br />
+            1-5 Years of Exp.
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-column subscribe">
+        <h3>Subscribe Us</h3>
+        <p>
+          It is a long established fact that a reader will be distracted by the
+          readable
+        </p>
+        <input type="email" placeholder="Email" />
+        <button class="hover-effect">Submit</button>
+      </div>
+    </footer>
+    <!-- End Footer -->
+  </body>
+</html>

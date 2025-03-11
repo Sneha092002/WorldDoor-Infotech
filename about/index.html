@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Business Growth Landing Page</title>
+    <link rel="stylesheet" href="input.css" />
+    <link href="./output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./HomeScreen/script.js"></script>
+    <style>
+      /* Header Styling */
+      header {
+        font-family: "Poppins", sans-serif; /* Professional modern font */
+        font-weight: 700; /* Bold font */
+        letter-spacing: 0.5px; /* Slight letter spacing for better readability */
+        text-transform: uppercase; /* Makes it more professional */
+      }
+
+      /*  Custom Styles */
+      /* Custom Styles */
+      .header-logo {
+        width: 80px;
+        height: auto;
+      }
+
+      /* Ensure header doesn't overlap content */
+      body {
+        padding-top: 100px;
+      }
+
+      /* Fix hero section spacing */
+      section {
+        margin-top: 0;
+      }
+
+      /* Hover Effects */
+      button:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      img:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      /* Responsive Fixes */
+      @media (max-width: 768px) {
+        .flex.items-center.space-x-5 {
+          flex-direction: column;
+          text-align: center;
+        }
+        .header-logo {
+          width: 60px;
+        }
+        .text-5xl {
+          font-size: 2rem;
+        }
+      }
+
+      .cursor-pointer {
+        cursor: pointer;
+      }
+      .slider {
+        display: flex;
+        width: 300%; /* Each slide takes full width */
+        transition: transform 0.5s ease-in-out;
+      }
+      .testimonial-container {
+        scroll-snap-type: x mandatory;
+        overflow-x: hidden; /* Hide overflow */
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
+      .testimonial-card {
+        flex: 0 0 100%;
+        scroll-snap-align: center;
+      }
+      .dot {
+        width: 10px;
+        height: 10px;
+        background-color: gray;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+      .dot.active {
+        background-color: red;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #0e1a3a;
+        color: white;
+        font-family: Arial, sans-serif;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+      .footer-column img {
+        width: 120px; /* Adjusted size */
+        height: auto;
+        display: block;
+        margin-bottom: 15px;
+      }
+
+      body {
+        background-color: #0e1a3a;
+        color: white;
+      }
+
+      .footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px;
+        background-color: #0e1a3a;
+      }
+
+      .footer-column {
+        flex: 1;
+        padding: 0 20px;
+      }
+
+      .footer-column h3 {
+        margin-bottom: 10px;
+        font-size: 20px;
+      }
+
+      .footer-column h3::after {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 3px;
+        background: #ff5e3a;
+        margin-top: 5px;
+      }
+
+      .footer-column p,
+      .footer-column ul {
+        font-size: 14px;
+        color: #ddd;
+      }
+
+      .footer-column ul {
+        list-style: none;
+      }
+
+      .footer-column ul li {
+        margin: 8px 0;
+      }
+
+      .career-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+      }
+
+      .career-item img {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+      }
+
+      .subscribe input {
+        width: 80%;
+        padding: 10px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 5px;
+      }
+
+      .subscribe button {
+        margin-top: 10px;
+        padding: 10px 20px;
+        border: none;
+        background: #ff5e3a;
+        color: white;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      .social-icons {
+        display: flex;
+        margin-top: 20px;
+      }
+
+      .social-icons img {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+        background: white;
+        padding: 5px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Header -->
+    <header
+      class="w-full h-[100px] bg-white text-black flex items-center justify-between px-10 fixed top-0 left-0 shadow-md z-50"
+    >
+      <div class="flex items-center space-x-4">
+        <a href="../index.html">
+          <img src="../images/logo2.png" alt="Logo" class="header-logo" />
+        </a>
+        <h1 class="text-xl font-bold">
+          <a href="../index.html"> World Door Infotech </a>
+        </h1>
+      </div>
+
+      <!-- Hamburger Menu for Mobile -->
+      <div class="md:hidden">
+        <button id="menu-toggle" class="text-black focus:outline-none">
+          <svg
+            class="w-8 h-8"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="hidden md:flex items-center space-x-5" id="menu">
+        <ul class="flex space-x-5">
+          <li>
+            <a href="../about/index.html" class="hover:text-red-500">About</a>
+          </li>
+          <li>
+            <a href="../services/index.html" class="hover:text-red-500"
+              >Our Services</a
+            >
+          </li>
+          <li>
+            <a href="../portfolio/index.html" class="hover:text-red-500"
+              >Portfolio</a
+            >
+          </li>
+          <li><a href="#" class="hover:text-red-500">Blog</a></li>
+          <li>
+            <a href="../contact/index.html" class="hover:text-red-500"
+              >Contact</a
+            >
+          </li>
+        </ul>
+
+        <a href="contact.html">
+          <button
+            class="bg-red-500 text-white px-5 py-2 rounded-lg hover:bg-red-700 transition-all"
+          >
+            Get in Touch
+          </button>
+        </a>
+      </nav>
+      <!-- Mobile Menu -->
+      <nav
+        class="absolute top-[100px] left-0 w-full bg-white text-black hidden flex-col items-center space-y-4 py-4 md:hidden"
+        id="mobile-menu"
+      >
+        <button class="nav-btn" onclick="navigate('./services/index')">
+          About
+        </button>
+        <button class="nav-btn" onclick="navigate('./services/index')">
+          Our Services
+        </button>
+        <button class="nav-btn" onclick="navigate('./services/index')">
+          Portfolio
+        </button>
+        <button class="nav-btn" onclick="navigate('./services/index')">
+          Contact
+        </button>
+        <a href="contact.html">
+          <button
+            class="bg-red-500 text-white px-5 py-2 rounded-lg hover:bg-red-700 transition-all"
+          >
+            Get in Touch
+          </button>
+        </a>
+      </nav>
+    </header>
+    <!-- End HeaderF -->
+
+    <!-- Main Sections -->
+    <main class="p-0 container mx-auto">
+      <section
+        id="section1"
+        class="bg-[#0E1F51] w-full h-[288px] flex flex-col justify-center items-center text-white text-center"
+      >
+        <!-- Main Title -->
+        <h2
+          class="text-[48px] leading-[58px] font-bold text-[#F05440] font-raleway"
+        >
+          About
+        </h2>
+
+        <!-- Breadcrumb Text -->
+        <p
+          class="text-[24px] leading-[20px] font-medium text-white font-raleway mt-2"
+        >
+          Home / About
+        </p>
+      </section>
+
+      <section
+        id="section2"
+        class="bg-[#F7F7F7] w-full min-h-[598px] py-[100px]"
+      >
+        <div
+          class="max-w-[1700px] mx-auto flex flex-col lg:flex-row items-center gap-8 px-6 lg:px-[150px]"
+        >
+          <!-- Left Side: Image -->
+          <div class="w-full md:w-1/2 flex justify-center md:justify-start">
+            <div class="w-[90%] max-w-[555px] h-[398px]">
+              <img
+                src="./Mask group.png"
+                alt="About Us Image"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
+          <!-- Right Side: Text -->
+          <div class="w-full md:w-1/2 px-4 md:px-0">
+            <h3
+              class="text-[#F05440] font-raleway font-bold text-[24px] leading-[20px] tracking-[0%] uppercase mb-2 text-center md:text-left"
+            >
+              \ About us \
+            </h3>
+            <h2
+              class="text-[#0E1F51] font-raleway font-bold text-[40px] leading-[50px] tracking-[0%] mb-4 text-center md:text-left"
+            >
+              One of the Fastest Way to Business Growth
+            </h2>
+
+            <p
+              class="text-[#000000] font-raleway font-medium text-[16px] leading-[27px] tracking-[0%] mb-4 text-center md:text-left"
+            >
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout. The
+              point of using Lorem Ipsum is that it has a more-or-less normal
+              distribution of letters, as opposed.
+            </p>
+
+            <div
+              class="bg-white flex flex-nowrap flex-row md:flex-row h-auto md:h-[100px] items-center justify-left p-4 rounded-2xl w-full"
+            >
+              <!-- Vector Image -->
+              <div
+                class="w-[70px] h-[70px] bg-[#F7F7F7] flex items-center justify-center rounded-lg mr-0 md:mr-4 mb-3 md:mb-0"
+              >
+                <img
+                  src="./Black.png"
+                  alt="Vector Icon"
+                  class="w-[40px] h-[40px]"
+                />
+              </div>
+
+              <!-- Text Content -->
+              <div class="text-center md:text-left flex flex-col">
+                <p
+                  class="text-[#0E1F51] font-raleway font-bold text-[20px] leading-[20px] tracking-[0]"
+                >
+                  Get Instant Professional Advice
+                </p>
+
+                <div
+                  class="flex flex-col md:flex-row justify-center md:justify-start mt-2"
+                >
+                  <p
+                    class="text-[#000000] font-raleway font-medium text-[16px] leading-[16px] tracking-[0]"
+                  >
+                    Ready to Help:
+                  </p>
+                  <p
+                    class="text-[#F05440] font-raleway font-bold text-[16px] leading-[16px] tracking-[0] md:ml-2"
+                  >
+                    +1 356 678 7897
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="section3"
+        class="bg-[#FFFFFF] py-[100px] px-6 md:px-[100px] lg:px-[150px] flex flex-col items-center text-center"
+      >
+        <p
+          class="text-[#F05440] font-raleway font-bold text-[24px] leading-[20px] tracking-[0]"
+        >
+          \Team\
+        </p>
+        <h3
+          class="text-[#0E1F51] font-raleway font-bold text-[40px] leading-[40px] tracking-[0] mt-2"
+        >
+          Our Leaders
+        </h3>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+          <!-- Cards -->
+          <div
+            class="w-full max-w-[263px] bg-white flex flex-col items-center rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:ring-2 hover:ring-[#F05440]"
+          >
+            <img
+              src="card.png"
+              alt="Person Image"
+              class="w-full h-[300px] object-cover rounded-t-lg"
+            />
+            <p
+              class="text-[#F05440] font-raleway font-bold text-[20px] leading-[20px] text-center mt-3"
+            >
+              Larry F. Burnett
+            </p>
+            <p
+              class="text-[#0E1F51] font-raleway font-medium text-[16px] leading-[20px] mt-3 text-center"
+            >
+              CEO
+            </p>
+          </div>
+
+          <!-- Duplicate the above card structure 7 more times -->
+          <div
+            class="w-full max-w-[263px] bg-white flex flex-col items-center rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:ring-2 hover:ring-[#F05440]"
+          >
+            <img
+              src="card.png"
+              alt="Person Image"
+              class="w-full h-[300px] object-cover rounded-t-lg"
+            />
+            <p
+              class="text-[#F05440] font-raleway font-bold text-[20px] leading-[20px] text-center mt-3"
+            >
+              Larry F. Burnett
+            </p>
+            <p
+              class="text-[#0E1F51] font-raleway font-medium text-[16px] leading-[20px] mt-3 text-center"
+            >
+              CEO
+            </p>
+          </div>
+
+          <div
+            class="w-full max-w-[263px] bg-white flex flex-col items-center rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:ring-2 hover:ring-[#F05440]"
+          >
+            <img
+              src="card.png"
+              alt="Person Image"
+              class="w-full h-[300px] object-cover rounded-t-lg"
+            />
+            <p
+              class="text-[#F05440] font-raleway font-bold text-[20px] leading-[20px] text-center mt-3"
+            >
+              Larry F. Burnett
+            </p>
+            <p
+              class="text-[#0E1F51] font-raleway font-medium text-[16px] leading-[20px] mt-3 text-center"
+            >
+              CEO
+            </p>
+          </div>
+
+          <!-- Duplicate the above card structure 7 more times -->
+          <div
+            class="w-full max-w-[263px] bg-white flex flex-col items-center rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:ring-2 hover:ring-[#F05440]"
+          >
+            <img
+              src="card.png"
+              alt="Person Image"
+              class="w-full h-[300px] object-cover rounded-t-lg"
+            />
+            <p
+              class="text-[#F05440] font-raleway font-bold text-[20px] leading-[20px] text-center mt-3"
+            >
+              Larry F. Burnett
+            </p>
+            <p
+              class="text-[#0E1F51] font-raleway font-medium text-[16px] leading-[20px] mt-3 text-center"
+            >
+              CEO
+            </p>
+          </div>
+          <div
+            class="w-full max-w-[263px] bg-white flex flex-col items-center rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:ring-2 hover:ring-[#F05440]"
+          >
+            <img
+              src="card.png"
+              alt="Person Image"
+              class="w-full h-[300px] object-cover rounded-t-lg"
+            />
+            <p
+              class="text-[#F05440] font-raleway font-bold text-[20px] leading-[20px] text-center mt-3"
+            >
+              Larry F. Burnett
+            </p>
+            <p
+              class="text-[#0E1F51] font-raleway font-medium text-[16px] leading-[20px] mt-3 text-center"
+            >
+              CEO
+            </p>
+          </div>
+
+          <!-- Duplicate the above card structure 7 more times -->
+          <div
+            class="w-full max-w-[263px] bg-white flex flex-col items-center rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:ring-2 hover:ring-[#F05440]"
+          >
+            <img
+              src="card.png"
+              alt="Person Image"
+              class="w-full h-[300px] object-cover rounded-t-lg"
+            />
+            <p
+              class="text-[#F05440] font-raleway font-bold text-[20px] leading-[20px] text-center mt-3"
+            >
+              Larry F. Burnett
+            </p>
+            <p
+              class="text-[#0E1F51] font-raleway font-medium text-[16px] leading-[20px] mt-3 text-center"
+            >
+              CEO
+            </p>
+          </div>
+          <div
+            class="w-full max-w-[263px] bg-white flex flex-col items-center rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:ring-2 hover:ring-[#F05440]"
+          >
+            <img
+              src="card.png"
+              alt="Person Image"
+              class="w-full h-[300px] object-cover rounded-t-lg"
+            />
+            <p
+              class="text-[#F05440] font-raleway font-bold text-[20px] leading-[20px] text-center mt-3"
+            >
+              Larry F. Burnett
+            </p>
+            <p
+              class="text-[#0E1F51] font-raleway font-medium text-[16px] leading-[20px] mt-3 text-center"
+            >
+              CEO
+            </p>
+          </div>
+
+          <!-- Duplicate the above card structure 7 more times -->
+          <div
+            class="w-full max-w-[263px] bg-white flex flex-col items-center rounded-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:ring-2 hover:ring-[#F05440]"
+          >
+            <img
+              src="card.png"
+              alt="Person Image"
+              class="w-full h-[300px] object-cover rounded-t-lg"
+            />
+            <p
+              class="text-[#F05440] font-raleway font-bold text-[20px] leading-[20px] text-center mt-3"
+            >
+              Larry F. Burnett
+            </p>
+            <p
+              class="text-[#0E1F51] font-raleway font-medium text-[16px] leading-[20px] mt-3 text-center"
+            >
+              CEO
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="section3"
+        class="bg-[#FFFFFF] rounded-lg flex flex-col items-center text-center"
+      >
+        <div
+          class="w-full max-w-[945px] h-[294px] bg-cover bg-center rounded-lg flex flex-col items-center mb-[100px] justify-center px-6 py-12"
+          style="background-image: url('./section4.png')"
+        >
+          <p
+            class="text-[32px] leading-[50px] font-raleway font-bold text-[#F7F7F7] text-center tracking-[0%] max-w-[600px]"
+          >
+            “Some of the History of Our Company is that we are Catching up
+            through Video”
+          </p>
+
+          <button
+            class="mt-6 px-6 py-3 bg-[#F05440] text-white font-raleway font-bold text-[16px] rounded-lg hover:bg-[#d84335] transition duration-300"
+          >
+            Get In Touch
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer style="margin-top: 3em" class="footer">
+      <div class="footer-column">
+        <img src="../images/logo.png" alt="Company Logo" class="company-logo" />
+        <p>
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at
+        </p>
+        <div class="social-icons">
+          <img
+            src="../images/linkedin.png"
+            alt="LinkedIn"
+            class="hover-effect"
+          />
+          <img src="../images/insta.png" alt="Instagram" class="hover-effect" />
+          <img src="../images/fb.png" alt="Facebook" class="hover-effect" />
+          <img src="../images/witter.png" alt="Twitter" class="hover-effect" />
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h3>Services</h3>
+        <ul>
+          <li class="hover-effect">Web Design/Development</li>
+          <li class="hover-effect">App Development</li>
+          <li class="hover-effect">UI/UX Design</li>
+          <li class="hover-effect">HubSpot Integration</li>
+          <li class="hover-effect">Email Marketing</li>
+          <li class="hover-effect">Website Migration</li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Career</h3>
+        <div class="career-item hover-effect">
+          <img src="images/react.png" alt="ReactJS Dev" />
+          <div>
+            <strong>ReactJS Dev.</strong><br />
+            1-5 Years of Exp.
+          </div>
+        </div>
+        <div class="career-item hover-effect">
+          <img src="images/world.png" alt="WordPress Dev" />
+          <div>
+            <strong>WordPress Dev.</strong><br />
+            1-5 Years of Exp.
+          </div>
+        </div>
+        <div class="career-item hover-effect">
+          <img src="images/wix.png" alt="Python Dev" />
+          <div>
+            <strong>Python Developer</strong><br />
+            1-5 Years of Exp.
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-column subscribe">
+        <h3>Subscribe Us</h3>
+        <p>
+          It is a long established fact that a reader will be distracted by the
+          readable
+        </p>
+        <input type="email" placeholder="Email" />
+        <button class="hover-effect">Submit</button>
+      </div>
+    </footer>
+    <!-- End Footer -->
+  </body>
+</html>

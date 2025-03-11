@@ -1,1 +1,372 @@
-<div style="font-size: 50px; color: rebeccapurple">Our Services</div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Services</title>
+    <link rel="stylesheet" href="../input.css" />
+    <link href="../output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header
+      class="w-full h-[100px] bg-white text-black flex items-center justify-between px-10 fixed top-0 left-0 shadow-md z-50"
+    >
+      <div class="flex items-center space-x-4">
+        <a href="../index.html">
+          <img src="../images/logo2.png" alt="Logo" class="header-logo" />
+        </a>
+        <h1 class="text-xl font-bold">
+          <a href="../index.html"> World Door Infotech </a>
+        </h1>
+      </div>
+
+      <!-- Hamburger Menu for Mobile -->
+      <div class="md:hidden">
+        <button id="menu-toggle" class="text-black focus:outline-none">
+          <svg
+            class="w-8 h-8"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="hidden md:flex items-center space-x-5" id="menu">
+        <ul class="flex space-x-5">
+          <li>
+            <a href="../about/index.html" class="hover:text-red-500">About</a>
+          </li>
+          <li>
+            <a
+              href="../services/index.html"
+              onclick="navigate('./services/index')"
+              class="hover:text-red-500"
+              >Our Services</a
+            >
+          </li>
+          <li>
+            <a href="../portfolio/index.html" class="hover:text-red-500"
+              >Portfolio</a
+            >
+          </li>
+          <li><a href="#" class="hover:text-red-500">Blog</a></li>
+          <li>
+            <a href="../contact/index.html" class="hover:text-red-500"
+              >Contact</a
+            >
+          </li>
+        </ul>
+
+        <a href="contact.html">
+          <button
+            class="bg-red-500 text-white px-5 py-2 rounded-lg hover:bg-red-700 transition-all"
+          >
+            Get in Touch
+          </button>
+        </a>
+      </nav>
+      <!-- Mobile Menu -->
+      <nav
+        class="absolute top-[100px] left-0 w-full bg-white text-black hidden flex-col items-center space-y-4 py-4 md:hidden"
+        id="mobile-menu"
+      >
+        <button class="nav-btn" onclick="navigate('./services/index')">
+          About
+        </button>
+        <button class="nav-btn" onclick="navigate('./services/index')">
+          Our Services
+        </button>
+        <button class="nav-btn" onclick="navigate('./services/index')">
+          Portfolio
+        </button>
+        <button class="nav-btn" onclick="navigate('./services/index')">
+          Contact
+        </button>
+        <a href="contact.html">
+          <button
+            class="bg-red-500 text-white px-5 py-2 rounded-lg hover:bg-red-700 transition-all"
+          >
+            Get in Touch
+          </button>
+        </a>
+      </nav>
+    </header>
+    <!-- End HeaderF -->
+
+    <!-- Services Section -->
+    <section class="bg-[#F7F7F7] w-full">
+      <div
+        class="py-[100px] px-[100px] bg-[#F7F7F7] w-full flex flex-col md:flex-row items-center"
+      >
+        <img
+          src="../services/bf.jpeg"
+          class="rounded-md md:w-1/2"
+          alt="Services Image"
+        />
+        <div class="md:w-1/2 md:ml-8">
+          <h3 class="text-lg font-semibold text-red-600">\What We Do\</h3>
+          <h2 class="text-3xl font-bold text-blue-900 mt-2">
+            We Develop Products That People Love to Use.
+          </h2>
+          <p class="mt-4 text-gray-600">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout.
+          </p>
+          <div class="mt-4 flex items-center gap-4 w-full">
+            <div
+              class="w-fit flex flex-row p-4 bg-white justify-around gap-4 rounded-lg"
+            >
+              <div
+                class="h-[70px] items-center flex justify-center w-[70px] rounded-lg bg-[#F05440]/10"
+              >
+                <img src="../services/Black (5).png" alt="" />
+              </div>
+              <div>
+                <h4 class="font-semibold" style="color: #f05440">Our Vision</h4>
+                <p class="text-sm text-gray-500">
+                  it is a long esta-blished fact that.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-row p-4 bg-white justify-around gap-4 rounded-lg"
+            >
+              <div
+                class="h-[70px] items-center flex justify-center w-[70px] rounded-lg bg-[#F05440]/10"
+              >
+                <img src="../services/Black (4).png" alt="" />
+              </div>
+              <div>
+                <h4 class="font-semibold" style="color: #f05440">Our Goal</h4>
+                <p class="text-sm text-gray-500">
+                  it is a long esta-blished fact that.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section class="container mx-auto text-center my-10 px-6">
+      <h3 class="text-lg font-semibold text-red-600">\Services\</h3>
+      <h2 class="text-3xl font-bold text-blue-900">Our Expertise</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+        <!-- Expertise Cards -->
+        <div
+          class="bg-white p-6 shadow-md rounded-md flex flex-col items-start text-left"
+        >
+          <img
+            src="../services/Web.png"
+            alt="Web Design"
+            class="w-16 h-[50px] w-[50px] object-cover rounded-md mb-4 self-start ml-2"
+          />
+          <h4 class="text-lg font-bold text-blue-900">
+            Web Design / Development
+          </h4>
+          <div class="w-10 h-1 bg-orange-500 mt-2"></div>
+          <!-- Orange Line Below Title -->
+          <p class="text-sm text-gray-600 mt-2">
+            We create stunning websites with modern UI/UX principles.
+          </p>
+        </div>
+
+        <div
+          class="bg-white p-6 shadow-md rounded-md flex flex-col items-start text-left"
+        >
+          <img
+            src="../services/Vector.png"
+            alt="UI/UX Design"
+            class="h-[50px] w-[50px] object-cover rounded-md mb-4 self-start ml-2"
+          />
+          <h4 class="text-lg font-bold text-blue-900">UI/UX Design</h4>
+          <div class="w-10 h-1 bg-orange-500 mt-2"></div>
+          <!-- Orange Line Below Title -->
+          <p class="text-sm text-gray-600 mt-2">
+            Delivering seamless user experiences through innovative design.
+          </p>
+        </div>
+
+        <div
+          class="bg-white p-6 shadow-md rounded-md flex flex-col items-start text-left"
+        >
+          <img
+            src="../services/wesite.png"
+            alt="Website Migration"
+            class="h-[50px] w-[50px] object-cover rounded-md mb-4 self-start ml-2"
+          />
+          <h4 class="text-lg font-bold text-blue-900">Website Migration</h4>
+          <div class="w-10 h-1 bg-orange-500 mt-2"></div>
+          <!-- Orange Line Below Title -->
+          <p class="text-sm text-gray-600 mt-2">
+            Seamless migration without data loss or downtime.
+          </p>
+        </div>
+
+        <div
+          class="bg-white p-6 shadow-md rounded-md flex flex-col items-start text-left"
+        >
+          <img
+            src="../services/App.png"
+            alt="App Development"
+            class="h-[50px] w-[50px] object-cover rounded-md mb-4 self-start ml-2"
+          />
+          <h4 class="text-lg font-bold text-blue-900">App Development</h4>
+          <div class="w-10 h-1 bg-orange-500 mt-2"></div>
+          <!-- Orange Line Below Title -->
+          <p class="text-sm text-gray-600 mt-2">
+            Building cross-platform mobile applications.
+          </p>
+        </div>
+
+        <div
+          class="bg-white p-6 shadow-md rounded-md flex flex-col items-start text-left"
+        >
+          <img
+            src="../services/Hub (2).png"
+            alt="HubSpot Integration"
+            class="h-[50px] w-[50px] object-cover rounded-md mb-4 self-start ml-2"
+          />
+          <h4 class="text-lg font-bold text-blue-900">HubSpot Integration</h4>
+          <div class="w-10 h-1 bg-orange-500 mt-2"></div>
+          <!-- Orange Line Below Title -->
+          <p class="text-sm text-gray-600 mt-2">
+            Optimized HubSpot CRM solutions for businesses.
+          </p>
+        </div>
+
+        <div
+          class="bg-white p-6 shadow-md rounded-md flex flex-col items-start text-left"
+        >
+          <img
+            src="../services/email.png"
+            alt="Email Marketing"
+            class="h-[50px] w-[50px] object-cover rounded-md mb-4 self-start ml-2"
+          />
+          <h4 class="text-lg font-bold text-blue-900">Email Marketing</h4>
+          <div class="w-10 h-1 bg-orange-500 mt-2"></div>
+          <!-- Orange Line Below Title -->
+          <p class="text-sm text-gray-600 mt-2">
+            Crafting high-converting email campaigns.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="section3"
+      class="bg-[#FFFFFF] rounded-lg flex flex-col items-center text-center"
+    >
+      <div
+        class="w-full max-w-[945px] h-[294px] bg-cover bg-center rounded-lg flex flex-col items-center mb-[100px] justify-center px-6 py-12"
+        style="background-image: url('../services/section4.png')"
+      >
+        <p
+          class="text-[32px] lxeading-[50px] font-raleway font-bold text-[#F7F7F7] text-center tracking-[0%] max-w-[600px]"
+        >
+          “Some of the History of Our Company is that we are Catching up through
+          Video”
+        </p>
+
+        <button
+          class="mt-6 px-6 py-3 bg-[#F05440] text-white font-raleway font-bold text-[16px] rounded-lg hover:bg-[#d84335] transition duration-300"
+        >
+          Get In Touch
+        </button>
+      </div>
+    </section>
+    <!-- End Service Section -->
+
+    <!-- Footer -->
+    <footer style="margin-top: 3em" class="footer">
+      <div class="footer-column">
+        <img src="../images/logo.png" alt="Company Logo" class="company-logo" />
+        <p>
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at
+        </p>
+        <div class="social-icons">
+          <img
+            src="../images/linkedin.png"
+            alt="LinkedIn"
+            class="hover-effect"
+          />
+          <img src="../images/insta.png" alt="Instagram" class="hover-effect" />
+          <img src="../images/fb.png" alt="Facebook" class="hover-effect" />
+          <img src="../images/witter.png" alt="Twitter" class="hover-effect" />
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h3>Services</h3>
+        <ul>
+          <li class="hover-effect">Web Design/Development</li>
+          <li class="hover-effect">App Development</li>
+          <li class="hover-effect">UI/UX Design</li>
+          <li class="hover-effect">HubSpot Integration</li>
+          <li class="hover-effect">Email Marketing</li>
+          <li class="hover-effect">Website Migration</li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Career</h3>
+        <div class="career-item hover-effect">
+          <img src="images/react.png" alt="ReactJS Dev" />
+          <div>
+            <strong>ReactJS Dev.</strong><br />
+            1-5 Years of Exp.
+          </div>
+        </div>
+        <div class="career-item hover-effect">
+          <img src="images/world.png" alt="WordPress Dev" />
+          <div>
+            <strong>WordPress Dev.</strong><br />
+            1-5 Years of Exp.
+          </div>
+        </div>
+        <div class="career-item hover-effect">
+          <img src="images/wix.png" alt="Python Dev" />
+          <div>
+            <strong>Python Developer</strong><br />
+            1-5 Years of Exp.
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-column subscribe">
+        <h3>Subscribe Us</h3>
+        <p>
+          It is a long established fact that a reader will be distracted by the
+          readable
+        </p>
+        <input type="email" placeholder="Email" />
+        <button class="hover-effect">Submit</button>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script>
+      function navigate(page) {
+        window.location.hash = page; // Change URL without reloading
+        loadPage(page + ".html");
+      }
+    </script>
+  </body>
+</html>
