@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -244,6 +245,355 @@
       </footer>
 
 </body>
+
+</body>
+</html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Growth Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+
+        /* Header Styling */
+    header {
+        font-family: "Poppins", sans-serif; /* Professional modern font */
+        font-weight: 700; /* Bold font */
+        letter-spacing: 0.5px; /* Slight letter spacing for better readability */
+        text-transform: uppercase; /* Makes it more professional */
+    }
+    
+         
+         /*  Custom Styles */
+           /* Custom Styles */
+           .header-logo {
+            width: 80px;
+            height: auto;
+        }
+    
+        /* Ensure header doesn't overlap content */
+        body {
+            padding-top: 100px;
+        }
+    
+        /* Fix hero section spacing */
+        section {
+            margin-top: 0;
+        }
+    
+        /* Hover Effects */
+        button:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+    
+        img:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
+    
+        /* Responsive Fixes */
+        @media (max-width: 768px) {
+            .flex.items-center.space-x-5 {
+                flex-direction: column;
+                text-align: center;
+            }
+            .header-logo {
+                width: 60px;
+            }
+            .text-5xl {
+                font-size: 2rem;
+            }
+        }
+    
+            .cursor-pointer {
+                cursor: pointer;
+            }
+            .slider {
+            display: flex;
+            width: 300%; /* Each slide takes full width */
+            transition: transform 0.5s ease-in-out;
+        }
+        .testimonial-container {
+            scroll-snap-type: x mandatory;
+            overflow-x: hidden; /* Hide overflow */
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        .testimonial-card {
+            flex: 0 0 100%;
+            scroll-snap-align: center;
+        }
+        .dot {
+            width: 10px;
+            height: 10px;
+            background-color: gray;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .dot.active {
+            background-color: red;
+        }
+        body {
+                margin: 0;
+                padding: 0;
+                background-color: #0E1A3A;
+                color: white;
+                font-family: Arial, sans-serif;
+            }
+      
+    
+    
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: Arial, sans-serif;
+            }
+            .footer-column img {
+        width: 120px; /* Adjusted size */
+        height: auto;
+        display: block;
+        margin-bottom: 15px;
+    }
+    
+    
+            body {
+                background-color: #0E1A3A;
+                color: white;
+            }
+    
+            .footer {
+                display: flex;
+                justify-content: space-between;
+                padding: 50px;
+                background-color: #0E1A3A;
+            }
+    
+            .footer-column {
+                flex: 1;
+                padding: 0 20px;
+            }
+    
+            .footer-column h3 {
+                margin-bottom: 10px;
+                font-size: 20px;
+            }
+    
+            .footer-column h3::after {
+                content: "";
+                display: block;
+                width: 50px;
+                height: 3px;
+                background: #FF5E3A;
+                margin-top: 5px;
+            }
+    
+            .footer-column p, .footer-column ul {
+                font-size: 14px;
+                color: #ddd;
+            }
+    
+            .footer-column ul {
+                list-style: none;
+            }
+    
+            .footer-column ul li {
+                margin: 8px 0;
+            }
+    
+            .career-item {
+                display: flex;
+                align-items: center;
+                margin-bottom: 15px;
+            }
+    
+            .career-item img {
+                width: 40px;
+                height: 40px;
+                margin-right: 10px;
+            }
+    
+            .subscribe input {
+                width: 80%;
+                padding: 10px;
+                margin-top: 10px;
+                border: none;
+                border-radius: 5px;
+            }
+    
+            .subscribe button {
+                margin-top: 10px;
+                padding: 10px 20px;
+                border: none;
+                background: #FF5E3A;
+                color: white;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+    
+            .social-icons {
+                display: flex;
+                margin-top: 20px;
+            }
+    
+            .social-icons img {
+                width: 40px;
+                height: 40px;
+                margin-right: 10px;
+                background: white;
+                padding: 5px;
+                border-radius: 5px;
+            }
+           </style>
+</head>
+<body class="bg-gray-100">
+   <!--  HEADER -->
+   <header class="w-full h-[100px] bg-white text-black flex items-center justify-between px-10 fixed top-0 left-0 shadow-md z-50">
+    <div class="flex items-center space-x-4">
+        <img src="images/logo2.png" alt="Logo" onclick="navigate('./HomeScreen/index')" class="header-logo"> 
+        <h1 class="text-xl font-bold" onclick="navigate('./HomeScreen/index')">World Door Infotech</h1>
+    </div>
+    <nav class="flex items-center space-x-5">
+        
+
+        <ul class="flex space-x-5">
+            <li><a href="#" class="hover:text-red-500">About</a></li>
+            <li><button style="color: #FF5E3A;font-size: 23px;" onclick="navigate('./services/index')">Services</button></li>
+            <li><a href="#" onclick="navigate('./services/index')" class="hover:text-red-500">Our Services</a></li>
+            <li><a href="#" class="hover:text-red-500">Portfolio</a></li>
+            <li><a href="#" class="hover:text-red-500">Blog</a></li>
+            <li><button style="color: #FF5E3A;font-size: 23px;" onclick="navigate('./contact/index')">Contact</button></li>
+        </ul>
+
+        <a href="contact.html">
+            <button class="bg-red-500 text-white px-5 py-2 rounded-lg hover:bg-red-700 transition-all">
+                Get in Touch
+            </button>
+        </a>
+    </nav>
+
+</header>
+
+
+<!-- <iframe src="./HomeScreen/index.html"  width="100%" height="100vh"></iframe> -->
+
+<!-- <object type="text/html" data="./HomeScreen/index.html" width="100%" height="100%"></object> -->
+<div style="margin-top: 6em;" id="custome_content"></div>
+
+<footer class="footer">
+    <div class="footer-column">
+        <img src="images/logo.png" alt="Company Logo" class="company-logo">
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at</p>
+        <div class="social-icons">
+            <img src="images/linkedin.png" alt="LinkedIn" class="hover-effect">
+            <img src="images/insta.png" alt="Instagram" class="hover-effect">
+            <img src="images/fb.png" alt="Facebook" class="hover-effect">
+            <img src="images/witter.png" alt="Twitter" class="hover-effect">
+        </div>
+    </div>
+
+    <div class="footer-column">
+        <h3>Services</h3>
+        <ul>
+            <li class="hover-effect">Web Design/Development</li>
+            <li class="hover-effect">App Development</li>
+            <li class="hover-effect">UI/UX Design</li>
+            <li class="hover-effect">HubSpot Integration</li>
+            <li class="hover-effect">Email Marketing</li>
+            <li class="hover-effect">Website Migration</li>
+        </ul>
+    </div>
+
+    <div class="footer-column">
+        <h3>Career</h3>
+        <div class="career-item hover-effect">
+            <img src="images/react.png" alt="ReactJS Dev">
+            <div>
+                <strong>ReactJS Dev.</strong><br>
+                1-5 Years of Exp.
+            </div>
+        </div>
+        <div class="career-item hover-effect">
+            <img src="images/world.png" alt="WordPress Dev">
+            <div>
+                <strong>WordPress Dev.</strong><br>
+                1-5 Years of Exp.
+            </div>
+        </div>
+        <div class="career-item hover-effect">
+            <img src="images/wix.png" alt="Python Dev">
+            <div>
+                <strong>Python Developer</strong><br>
+                1-5 Years of Exp.
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-column subscribe">
+        <h3>Subscribe Us</h3>
+        <p>It is a long established fact that a reader will be distracted by the readable</p>
+        <input type="email" placeholder="Email">
+        <button class="hover-effect">Submit</button>
+    </div>
+</footer>
+
+</footer>
+
+
+
+
+<!-- JavaScript for Smooth Sliding -->
+<script>
+    let currentIndex = 0;
+    const slider = document.getElementById("slider");
+    const dots = document.querySelectorAll(".dot");
+    const totalSlides = dots.length;
+    let autoSlide = setInterval(nextSlide, 2500);
+
+    function moveSlide(index) {
+        clearInterval(autoSlide);
+        currentIndex = index;
+        updateSlider();
+        autoSlide = setInterval(nextSlide, 2500);
+    }
+
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        updateSlider();
+    }
+
+    function updateSlider() {
+        slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+        dots.forEach((dot, i) => dot.classList.toggle("bg-red-400", i === currentIndex));
+    }
+</script>
+
+
+<script>
+    $("#custome_content").load("./HomeScreen/index.html");
+
+    function navigate(page) {
+        window.location.hash = page;  // Change URL without reloading
+        loadPage(page + ".html");
+    }
+
+    function loadPage(page) {
+        fetch(page)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("custome_content").innerHTML = data;
+            })
+            .catch(error => console.error("Error loading the page:", error));
+    }
+</script>
 
 </body>
 </html>
