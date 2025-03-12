@@ -254,7 +254,7 @@
               >Portfolio</a
             >
           </li>
-          <li><a href="#" class="hover:text-red-500">Blog</a></li>
+         <!--<li><a href="#" class="hover:text-red-500">Blog</a></li>--> 
           <li>
             <a href="../contact/index.html" class="hover:text-red-500"
               >Contact</a
@@ -300,13 +300,10 @@
 
     <!-- Contact Section -->
     <section
-      class="bg-blue-900 text-white py-20"
-      style="background-color: #0e1f51"
+      class="w-screen h-[230px] bg-blue-950 flex flex-col items-center justify-center text-white pt-[120px] mt-0"
     >
-      <div class="container mx-auto text-center h-10">
-        <h1 class="text-4xl font-bold mb-4" style="color: #f05440">Contact</h1>
-        <p class="text-lg">Home / Contact</p>
-      </div>
+      <h2 class="text-3xl font-bold text-orange-500">Contact</h2>
+      <p class="text-white mt-4">Home / Contact</p>
     </section>
 
     <section
@@ -318,7 +315,9 @@
           <h2 class="text-2xl font-semibold text-red-500 mb-2">
             \ Get In Touch \
           </h2>
-          <h3 class="text-3xl font-bold">Hey! Let's Talk</h3>
+          <h3 class="text-3xl font-bold" style="color: #000">
+            Hey! Let's Talk
+          </h3>
         </div>
 
         <div class="flex flex-col md:flex-row justify-center">
@@ -390,7 +389,7 @@
                 <h4 class="font-semibold" style="color: #f05440">
                   Call Anytime
                 </h4>
-                <p>+91 9876543210</p>
+                <p style="color: #000">+91 9876543210</p>
               </div>
             </div>
 
@@ -415,7 +414,7 @@
                   <h4 class="font-semibold" style="color: #f05440">
                     Send Email
                   </h4>
-                  <p>contact@infotech.com</p>
+                  <p style="color: #000">contact@infotech.com</p>
                 </div>
               </div>
 
@@ -443,16 +442,19 @@
                 </div>
                 <div>
                   <h4 class="font-semibold" style="color: #f05440">Visit Us</h4>
-                  <p>20 Main Park Road, New Jersey, USA</p>
+                  <p style="color: #000">20 Main Park Road, New Jersey, USA</p>
                 </div>
               </div>
             </diva>
             <div class="mt-8">
-              <h4 class="font-semibold mb-2" style="text-align: center">
+              <h4
+                class="font-semibold mb-2"
+                style="text-align: center; color: #000"
+              >
                 Follow us
               </h4>
               <div class="flex space-x-4">
-                <a href="#" class="bg-red-600 text-white rounded-full p-2">
+                <a href="https://www.facebook.com/share/1DXPd6mbpr/" class="bg-red-600 text-white rounded-full p-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="h-5 w-5"
@@ -476,7 +478,7 @@
                     />
                   </svg>
                 </a>
-                <a href="#" class="bg-red-600 text-white rounded-full p-2">
+                <a href="https://www.instagram.com/worlddoorinfotech?igsh=MTF1YjhkcXNuZGVhYw==" class="bg-red-600 text-white rounded-full p-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="h-5 w-5"
@@ -511,28 +513,21 @@
       </div>
     </section>
 
-    <section
-      id="section3"
-      class="bg-[#FFFFFF] w-full px-[150px] rounded-lg flex flex-col items-center text-center"
-    >
-      <div
-        class="mx-[150px] max-w-[945px] h-[294px] bg-cover bg-center rounded-lg flex flex-col items-center mb-[100px] justify-center px-6 py-12"
-        style="background-image: url('./image/section4.png')"
-      >
-        <p
-          class="text-[50px] text-white leading-[50px] font-raleway font-bold text-[#F7F7F7] text-center tracking-[0%] max-w-[600px]"
-        >
-          "Some of the History of Our Company is that br we are Catching up
-          through Video"
-        </p>
+    <!-- QUOTE SECTION -->
+  <section class="w-screen flex justify-center my-10 relative">
+    <img src="../images/portfolio/Quote.png"
+         alt="Quote Section"
+         class="quote-section rounded-lg object-cover" />
 
-        <button
-          class="mt-6 px-6 py-3 bg-red-600 text-white font-raleway font-bold text-[16px] rounded-lg hover:bg-[#F05440] transition duration-300"
-        >
-          Get In Touch
-        </button>
-      </div>
-    </section>
+    <a href="contact.html"
+       class="absolute top-[72%] left-[50%] transform -translate-x-1/2 -translate-y-1/2">
+      <button class="bg-red-500 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-all">
+        Get in Touch
+      </button>
+    </a>
+  </section>
+
+</div>
     <!-- End Contact Section -->
 
     <!-- Footer -->
@@ -570,21 +565,21 @@
       <div class="footer-column">
         <h3>Career</h3>
         <div class="career-item hover-effect">
-          <img src="images/react.png" alt="ReactJS Dev" />
+          <img src="../images/react.png" alt="ReactJS Dev" />
           <div>
             <strong>ReactJS Dev.</strong><br />
             1-5 Years of Exp.
           </div>
         </div>
         <div class="career-item hover-effect">
-          <img src="images/world.png" alt="WordPress Dev" />
+          <img src="../images/world.png" alt="WordPress Dev" />
           <div>
             <strong>WordPress Dev.</strong><br />
             1-5 Years of Exp.
           </div>
         </div>
         <div class="career-item hover-effect">
-          <img src="images/wix.png" alt="Python Dev" />
+          <img src="../images/wix.png" alt="Python Dev" />
           <div>
             <strong>Python Developer</strong><br />
             1-5 Years of Exp.

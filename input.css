@@ -1,4 +1,4 @@
-@import "tailwindcss";
+/* @import "tailwindcss"; */
 
 
 
@@ -84,7 +84,6 @@ button:active {
 }
 
      
-     /*  Custom Styles */
        /* Custom Styles */
        .header-logo {
         width: 80px;
@@ -133,55 +132,126 @@ button:active {
         .cursor-pointer {
             cursor: pointer;
         }
-        .slider {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-            width: 100%; /* Remove fixed width */
-        }
-        
-    
-        .testimonial-container {
-            position: relative;
-            scroll-snap-type: x mandatory;
-            overflow-x: hidden; /* Hide overflow */
-            display: flex;
-            justify-content: center;
-            width: 100%;
-        }
-        
-        .testimonial-card {
-            flex: 0 0 100%;
-            scroll-snap-align: center;
-        }
-        
-    .dot {
-        width: 10px;
-        height: 10px;
-        background-color: gray;
-        border-radius: 50%;
-        cursor: pointer;
-        transition: background 0.3s;
-    }
-    .dot.active {
-        background-color: red;
-    }
    
-    * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-        .footer-column img {
-    width: 120px; /* Adjusted size */
-    height: auto;
+        .avatar {
+            vertical-align: middle;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+          }
+   /*get in touch*/     
+  section.relative {
+    background: #0c1c48 !important;
+  }
+   /*get in touch*/  
+   /*testimonial*/
+   /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+
+/* Section Styling */
+.testimonial-section {
+    padding: 50px 20px;
+}
+
+.testimonial-section h3 {
+    color: #ff5722;
+    font-weight: bold;
+}
+
+.testimonial-section h2 {
+    color: #172b4d;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+/* Testimonial Container */
+.testimonial-container {
+    position: relative;
+    max-width: 500px;
+    margin: auto;
+    height: 220px;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: none;
+}
+
+.testimonial-card.active {
+    opacity: 1;
+    transform: scale(1);
+    border: 2px solid #172b4d;
     display: block;
+}
+
+/* User Image */
+.testimonial-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Text */
+.testimonial-text {
+    font-size: 16px;
+    color: #333;
     margin-bottom: 15px;
 }
-        body {
-            background-color: #0E1A3A;
-            color: white;
-        }
+
+/* Name and Role */
+.testimonial-name {
+    color: #ff5722;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.testimonial-role {
+    color: #172b4d;
+    font-size: 1rem;
+}
+
+/* Dots */
+.dots {
+    margin-top: 20px;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: #ff5722;
+}
+
+   /*testimonial ends*/
+/*footer*
 
         .footer {
             display: flex;
@@ -265,3 +335,4 @@ button:active {
             padding: 5px;
             border-radius: 5px;
         }
+/*footer ends*/

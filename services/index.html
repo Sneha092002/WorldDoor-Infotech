@@ -63,7 +63,7 @@
               >Portfolio</a
             >
           </li>
-          <li><a href="#" class="hover:text-red-500">Blog</a></li>
+          <!--<li><a href="#" class="hover:text-red-500">Blog</a></li>--> 
           <li>
             <a href="../contact/index.html" class="hover:text-red-500"
               >Contact</a
@@ -107,190 +107,260 @@
     </header>
     <!-- End HeaderF -->
 
-    <!-- Services Section -->
-    <section class="bg-[#F7F7F7] w-full">
-      <div
-        class="py-[100px] px-[100px] bg-[#F7F7F7] w-full flex flex-col md:flex-row items-center"
+   <!-- what we do section -->
+<section class="bg-gray-100 py-16 px-10">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
+    <!-- Left Side: Image -->
+    <div class="md:w-1/2 relative group">
+      <img
+        src="../images/Mask group.png"
+        alt="Team Working"
+        class="w-full h-auto rounded-xl shadow-lg transform transition-all duration-500 group-hover:scale-105"
+      />
+    </div>
+
+    <!-- Right Side: Text Content -->
+    <div class="md:w-1/2">
+      <h2 class="text-red-500 text-xl font-Railway tracking-widest uppercase">
+        <span
+          class="inline-block transition duration-300 hover:text-red-700 cursor-pointer"
+          >\ What We Do \</span
+        >
+      </h2>
+      <h1
+        class="text-4xl font-bold text-gray-900 mt-2 leading-snug transition duration-300 hover:text-gray-700"
       >
-        <img
-          src="../services/bf.jpeg"
-          class="rounded-md md:w-1/2"
-          alt="Services Image"
-        />
-        <div class="md:w-1/2 md:ml-8">
-          <h3 class="text-lg font-semibold text-red-600">\What We Do\</h3>
-          <h2 class="text-3xl font-bold text-blue-900 mt-2">
-            We Develop Products That People Love to Use.
-          </h2>
-          <p class="mt-4 text-gray-600">
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout.
-          </p>
-          <div class="mt-4 flex items-center gap-4 w-full">
-            <div
-              class="w-fit flex flex-row p-4 bg-white justify-around gap-4 rounded-lg"
+        We Develop Product That <br />
+        People Love to Use.
+      </h1>
+      <p class="mt-4 text-gray-600 transition duration-300 hover:text-gray-800">
+        We create high-performance, responsive websites tailored to your business needs. Our services include:
+      </p>
+
+      <!-- Small Feature Boxes -->
+      <div class="mt-6 flex gap-4">
+        <div
+          class="bg-white shadow-md p-4 rounded-lg flex items-start gap-4 w-1/2 transition duration-300 hover:shadow-xl hover:-translate-y-1"
+        >
+          <div
+            class="bg-red-100 p-2 rounded-lg transition duration-300 group-hover:scale-110"
+          >
+            <img
+              src="../images/icon2.png.png"
+              alt="Vision Icon"
+              class="w-8 h-8"
+            />
+          </div>
+          <div>
+            <h3
+              class="text-red-500 font-bold transition duration-300 hover:text-red-700 cursor-pointer"
             >
-              <div
-                class="h-[70px] items-center flex justify-center w-[70px] rounded-lg bg-[#F05440]/10"
-              >
-                <img src="../services/Black (5).png" alt="" />
-              </div>
-              <div>
-                <h4 class="font-semibold" style="color: #f05440">Our Vision</h4>
-                <p class="text-sm text-gray-500">
-                  it is a long esta-blished fact that.
-                </p>
-              </div>
-            </div>
-            <div
-              class="flex flex-row p-4 bg-white justify-around gap-4 rounded-lg"
+              Our Vision
+            </h3>
+            <p
+              class="text-gray-600 text-sm transition duration-300 hover:text-gray-800"
             >
-              <div
-                class="h-[70px] items-center flex justify-center w-[70px] rounded-lg bg-[#F05440]/10"
-              >
-                <img src="../services/Black (4).png" alt="" />
-              </div>
-              <div>
-                <h4 class="font-semibold" style="color: #f05440">Our Goal</h4>
-                <p class="text-sm text-gray-500">
-                  it is a long esta-blished fact that.
-                </p>
-              </div>
-            </div>
+              We innovate to improve experiences.
+            </p>
+          </div>
+        </div>
+        <div
+          class="bg-white shadow-md p-4 rounded-lg flex items-start gap-4 w-1/2 transition duration-300 hover:shadow-xl hover:-translate-y-1"
+        >
+          <div
+            class="bg-red-100 p-2 rounded-lg transition duration-300 group-hover:scale-110"
+          >
+            <img
+              src="../images/icon1.png.png"
+              alt="Goal Icon"
+              class="w-8 h-8"
+            />
+          </div>
+          <div>
+            <h3
+              class="text-red-500 font-bold transition duration-300 hover:text-red-700 cursor-pointer"
+            >
+              Our Goal
+            </h3>
+            <p
+              class="text-gray-600 text-sm transition duration-300 hover:text-gray-800"
+            >
+              Achieving excellence through creativity.
+            </p>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- Expertise Section -->
-    <section class="container mx-auto text-center my-10 px-6">
-      <h3 class="text-lg font-semibold text-red-600">\Services\</h3>
-      <h2 class="text-3xl font-bold text-blue-900">Our Expertise</h2>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
-        <!-- Expertise Cards -->
-        <div
-          class="bg-white p-6 shadow-md rounded-md flex flex-col items-start text-left"
-        >
-          <img
-            src="../services/Web.png"
-            alt="Web Design"
-            class="w-16 h-[50px] w-[50px] object-cover rounded-md mb-4 self-start ml-2"
-          />
-          <h4 class="text-lg font-bold text-blue-900">
-            Web Design / Development
-          </h4>
-          <div class="w-10 h-1 bg-orange-500 mt-2"></div>
-          <!-- Orange Line Below Title -->
-          <p class="text-sm text-gray-600 mt-2">
-            We create stunning websites with modern UI/UX principles.
-          </p>
-        </div>
-
-        <div
-          class="bg-white p-6 shadow-md rounded-md flex flex-col items-start text-left"
-        >
-          <img
-            src="../services/Vector.png"
-            alt="UI/UX Design"
-            class="h-[50px] w-[50px] object-cover rounded-md mb-4 self-start ml-2"
-          />
-          <h4 class="text-lg font-bold text-blue-900">UI/UX Design</h4>
-          <div class="w-10 h-1 bg-orange-500 mt-2"></div>
-          <!-- Orange Line Below Title -->
-          <p class="text-sm text-gray-600 mt-2">
-            Delivering seamless user experiences through innovative design.
-          </p>
-        </div>
-
-        <div
-          class="bg-white p-6 shadow-md rounded-md flex flex-col items-start text-left"
-        >
-          <img
-            src="../services/wesite.png"
-            alt="Website Migration"
-            class="h-[50px] w-[50px] object-cover rounded-md mb-4 self-start ml-2"
-          />
-          <h4 class="text-lg font-bold text-blue-900">Website Migration</h4>
-          <div class="w-10 h-1 bg-orange-500 mt-2"></div>
-          <!-- Orange Line Below Title -->
-          <p class="text-sm text-gray-600 mt-2">
-            Seamless migration without data loss or downtime.
-          </p>
-        </div>
-
-        <div
-          class="bg-white p-6 shadow-md rounded-md flex flex-col items-start text-left"
-        >
-          <img
-            src="../services/App.png"
-            alt="App Development"
-            class="h-[50px] w-[50px] object-cover rounded-md mb-4 self-start ml-2"
-          />
-          <h4 class="text-lg font-bold text-blue-900">App Development</h4>
-          <div class="w-10 h-1 bg-orange-500 mt-2"></div>
-          <!-- Orange Line Below Title -->
-          <p class="text-sm text-gray-600 mt-2">
-            Building cross-platform mobile applications.
-          </p>
-        </div>
-
-        <div
-          class="bg-white p-6 shadow-md rounded-md flex flex-col items-start text-left"
-        >
-          <img
-            src="../services/Hub (2).png"
-            alt="HubSpot Integration"
-            class="h-[50px] w-[50px] object-cover rounded-md mb-4 self-start ml-2"
-          />
-          <h4 class="text-lg font-bold text-blue-900">HubSpot Integration</h4>
-          <div class="w-10 h-1 bg-orange-500 mt-2"></div>
-          <!-- Orange Line Below Title -->
-          <p class="text-sm text-gray-600 mt-2">
-            Optimized HubSpot CRM solutions for businesses.
-          </p>
-        </div>
-
-        <div
-          class="bg-white p-6 shadow-md rounded-md flex flex-col items-start text-left"
-        >
-          <img
-            src="../services/email.png"
-            alt="Email Marketing"
-            class="h-[50px] w-[50px] object-cover rounded-md mb-4 self-start ml-2"
-          />
-          <h4 class="text-lg font-bold text-blue-900">Email Marketing</h4>
-          <div class="w-10 h-1 bg-orange-500 mt-2"></div>
-          <!-- Orange Line Below Title -->
-          <p class="text-sm text-gray-600 mt-2">
-            Crafting high-converting email campaigns.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section
-      id="section3"
-      class="bg-[#FFFFFF] rounded-lg flex flex-col items-center text-center"
-    >
-      <div
-        class="w-full max-w-[945px] h-[294px] bg-cover bg-center rounded-lg flex flex-col items-center mb-[100px] justify-center px-6 py-12"
-        style="background-image: url('../services/section4.png')"
+      <!-- View More Button -->
+      <button
+        class="mt-6 px-6 py-3 bg-red-500 text-white rounded-lg shadow-lg transition duration-300 hover:bg-red-600 hover:shadow-xl active:scale-95"
       >
-        <p
-          class="text-[32px] lxeading-[50px] font-raleway font-bold text-[#F7F7F7] text-center tracking-[0%] max-w-[600px]"
-        >
-          “Some of the History of Our Company is that we are Catching up through
-          Video”
-        </p>
+        View More
+      </button>
+    </div>
+  </div>
+</section>
 
+<!-- Services Section -->
+<section class="py-16 bg-gray-100 text-center">
+  <h2
+    class="text-red-500 text-lg font-semibold cursor-pointer transition duration-300 hover:text-red-700"
+  >
+    \ Services \
+  </h2>
+  <h1
+    class="text-4xl font-bold text-gray-900 mt-2 cursor-pointer transition duration-300 hover:text-gray-700"
+  >
+    Our Expertise
+  </h1>
+
+  <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6 px-10">
+    <!-- Service Cards -->
+    <div
+      class="bg-white p-6 rounded-lg shadow-lg text-left transition duration-300 hover:shadow-2xl hover:-translate-y-1 cursor-pointer"
+    >
+      <img
+        src="../images/web-design-icon.png.png"
+        alt="Web Design"
+        class="h-12 mb-4 transition duration-300 hover:scale-110"
+      />
+      <h3
+        class="text-lg font-bold text-gray-900 transition duration-300 hover:text-red-500"
+      >
+        Web Design / Development
+      </h3>
+      <div class="w-10 h-1 bg-red-500 my-2"></div>
+      <p class="text-gray-600 transition duration-300 hover:text-gray-800">
+        Creating stunning and user-friendly websites.
+      </p>
+    </div>
+
+    <div
+      class="bg-white p-6 rounded-lg shadow-lg text-left transition duration-300 hover:shadow-2xl hover:-translate-y-1 cursor-pointer"
+    >
+      <img
+        src="../images/ui-ux-icon.png.png"
+        alt="UI/UX Design"
+        class="h-12 mb-4 transition duration-300 hover:scale-110"
+      />
+      <h3
+        class="text-lg font-bold text-gray-900 transition duration-300 hover:text-red-500"
+      >
+        UI/UX Design
+      </h3>
+      <div class="w-10 h-1 bg-red-500 my-2"></div>
+      <p class="text-gray-600 transition duration-300 hover:text-gray-800">
+        Enhancing user experience with intuitive designs.
+      </p>
+    </div>
+
+    <div
+      class="bg-white p-6 rounded-lg shadow-lg text-left transition duration-300 hover:shadow-2xl hover:-translate-y-1 cursor-pointer"
+    >
+      <img
+        src="../images/migration-icon.png.png"
+        alt="Website Migration"
+        class="h-12 mb-4 transition duration-300 hover:scale-110"
+      />
+      <h3
+        class="text-lg font-bold text-gray-900 transition duration-300 hover:text-red-500"
+      >
+      Digital Marketing 
+      </h3>
+      <div class="w-10 h-1 bg-red-500 my-2"></div>
+      <p class="text-gray-600 transition duration-300 hover:text-gray-800">
+        Seamlessly migrating websites with minimal downtime.
+      </p>
+    </div>
+
+    <div
+      class="bg-white p-6 rounded-lg shadow-lg text-left transition duration-300 hover:shadow-2xl hover:-translate-y-1 cursor-pointer"
+    >
+      <img
+        src="../images/app-development-icon.png.png"
+        alt="App Development"
+        class="h-12 mb-4 transition duration-300 hover:scale-110"
+      />
+      <h3
+        class="text-lg font-bold text-gray-900 transition duration-300 hover:text-red-500"
+      >
+        App Development
+      </h3>
+      <div class="w-10 h-1 bg-red-500 my-2"></div>
+      <p class="text-gray-600 transition duration-300 hover:text-gray-800">
+        Building high-performance mobile and web apps.
+      </p>
+    </div>
+
+    <div
+      class="bg-white p-6 rounded-lg shadow-lg text-left transition duration-300 hover:shadow-2xl hover:-translate-y-1 cursor-pointer"
+    >
+      <img
+        src="../images/hubspot-icon.png.png"
+        alt="HubSpot Integration"
+        class="h-12 mb-4 transition duration-300 hover:scale-110"
+      />
+      <h3
+        class="text-lg font-bold text-gray-900 transition duration-300 hover:text-red-500"
+      >
+      E-commerce Solutions 
+      </h3>
+      <div class="w-10 h-1 bg-red-500 my-2"></div>
+      <p class="text-gray-600 transition duration-300 hover:text-gray-800">
+        Automating marketing and sales processes.
+      </p>
+    </div>
+
+    <div
+      class="bg-white p-6 rounded-lg shadow-lg text-left transition duration-300 hover:shadow-2xl hover:-translate-y-1 cursor-pointer"
+    >
+      <img
+        src="../images/email-marketing-icon.png.png"
+        alt="Email Marketing"
+        class="h-12 mb-4 transition duration-300 hover:scale-110"
+      />
+      <h3
+        class="text-lg font-bold text-gray-900 transition duration-300 hover:text-red-500"
+      >
+        Email Marketing
+      </h3>
+      <div class="w-10 h-1 bg-red-500 my-2"></div>
+      <p class="text-gray-600 transition duration-300 hover:text-gray-800">
+        Driving engagement through strategic campaigns.
+      </p>
+    </div>
+  </div>
+</section>
+
+   <!-- Full-Width White Container -->
+<section class="bg-white py-16">
+  <div class="max-w-5xl mx-auto px-6">
+    <div class="relative w-full">
+      <!-- Background Image -->
+      <img
+        src="../images/getintouch.png"
+        alt="Get in Touch"
+        class="w-full rounded-xl shadow-md"
+      />
+
+      <!-- Text & Button Overlay -->
+      <div
+        class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-6"
+      >
+        <h2 class="text-2xl font-semibold leading-relaxed">
+          “Some of the History of Our Company is that <br />
+          we are Catching up through Video”
+        </h2>
         <button
-          class="mt-6 px-6 py-3 bg-[#F05440] text-white font-raleway font-bold text-[16px] rounded-lg hover:bg-[#d84335] transition duration-300"
+          class="mt-4 bg-red-500 text-white px-6 py-2 rounded-md text-lg font-semibold shadow-md hover:bg-red-600 transition-all duration-300"
         >
           Get In Touch
         </button>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
     <!-- End Service Section -->
 
     <!-- Footer -->
@@ -328,21 +398,21 @@
       <div class="footer-column">
         <h3>Career</h3>
         <div class="career-item hover-effect">
-          <img src="images/react.png" alt="ReactJS Dev" />
+          <img src="../images/react.png" alt="ReactJS Dev" />
           <div>
             <strong>ReactJS Dev.</strong><br />
             1-5 Years of Exp.
           </div>
         </div>
         <div class="career-item hover-effect">
-          <img src="images/world.png" alt="WordPress Dev" />
+          <img src="../images/world.png" alt="WordPress Dev" />
           <div>
             <strong>WordPress Dev.</strong><br />
             1-5 Years of Exp.
           </div>
         </div>
         <div class="career-item hover-effect">
-          <img src="images/wix.png" alt="Python Dev" />
+          <img src="../images/wix.png" alt="Python Dev" />
           <div>
             <strong>Python Developer</strong><br />
             1-5 Years of Exp.
